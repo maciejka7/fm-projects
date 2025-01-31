@@ -1,3 +1,9 @@
+---
+import TopNav from "../components/main-nav/top-nav.vue";
+const { nav } = Astro.params;
+console.log(nav);
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,11 +14,7 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
-    <nav>
-  <a href="/">home</a>
-
-  <a href="/projects">projects</a>
-    </nav>  k
+		<TopNav />
 		<slot />
 	</body>
 </html>
